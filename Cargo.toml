@@ -1,0 +1,16 @@
+[package]
+name = "tap-plugin-prefetch"
+version = "0.1.0"
+authors = ["Solal Jacob"]
+edition = "2021"
+
+[dependencies]
+tap = { version="0.1.0", git="https://github.com/tap-ir/tap.git" }
+tap_derive = { version="0.1.0", git="https://github.com/tap-ir/tap_derive.git" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+schemars = "0.8"
+log = { version = "0.4", features = ["std", "serde"] }
+byteorder = "1.4.3"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = { version = "1.0.40"}
